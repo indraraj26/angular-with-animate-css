@@ -1,0 +1,8 @@
+<hello name="{{ name }}"></hello>
+<button (click)="onClick()">Click me</button>
+<ng-container *ngFor="let item of [1,2,3,4]; let i = index">
+<p #lol class="animated slow">
+  Start editing to see some magic happen :) {{i}}
+  <button class="remove animated fast" (click)="onPara(lol)">remove</button>
+</p> 
+</ng-container>
